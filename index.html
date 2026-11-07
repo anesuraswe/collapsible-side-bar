@@ -1,12 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
     <link rel="stylesheet" href="style.css">
-    <title>Collapsible Side Bar</title>
 </head>
 <body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+            <!-- Logo section -->
+            <div class="logo">
+                <div class="logo-icon">AN</div>
+                <span class="logo-text">MyDashboard</span>
+            </div>
+
+            <!-- Navigation links -->
+            <nav class="navigation">
+
+                <a href="#" class="nav-link active">
+                    <span class="icon">⌂</span>
+                    <span class="link-text">Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="icon">♙</span>
+                    <span class="link-text">Profile</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="icon">✉</span>
+                    <span class="link-text">Messages</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="icon">⚙</span>
+                    <span class="link-text">Settings</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="icon">ⓘ</span>
+                    <span class="link-text">Help</span>
+                </a>
+
+            </nav>
+
+            <!-- Collapse button -->
+            <button class="toggle-btn" id="toggleBtn"
+                aria-label="Collapse sidebar"
+                aria-expanded="true">
+                <span id="toggleIcon">❮</span>
+            </button>
+
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                ☰
+            </button>
+
+            <h1>Elevvo Task #1</h1>
+            <p>
+                This is the main content area. Click the sidebar
+                button to collapse or expand the navigation.
+            </p>
+
+        </main>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
