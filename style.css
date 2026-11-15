@@ -1,5 +1,4 @@
 
-/* General styling */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    background: #f5f3ef;
 }
 
 .container {
@@ -16,11 +15,10 @@ body {
     min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
     width: 250px;
     height: 100vh;
-    background: #1e293b;
+    background: #292b27;
     color: white;
     padding: 20px 15px;
     position: relative;
@@ -31,7 +29,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -45,7 +42,7 @@ body {
     width: 40px;
     height: 40px;
     min-width: 40px;
-    background: #6366f1;
+    background: #c46b45;
     border-radius: 10px;
 
     display: flex;
@@ -62,7 +59,6 @@ body {
     transition: opacity 0.2s ease;
 }
 
-/* Navigation */
 .navigation {
     display: flex;
     flex-direction: column;
@@ -78,7 +74,7 @@ body {
     border-radius: 8px;
 
     text-decoration: none;
-    color: #cbd5e1;
+    color: #d8d2c8;
 
     white-space: nowrap;
     transition: background 0.2s ease, color 0.2s ease;
@@ -86,7 +82,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    background: #6366f1;
+    background: #c46b45;
     color: white;
 }
 
@@ -100,7 +96,6 @@ body {
     transition: opacity 0.2s ease;
 }
 
-/* Toggle button */
 .toggle-btn {
     position: absolute;
     bottom: 25px;
@@ -111,14 +106,13 @@ body {
 
     border: none;
     border-radius: 50%;
-    background: #6366f1;
+    background: #c46b45;
     color: white;
 
     cursor: pointer;
     z-index: 2;
 }
 
-/* Main content */
 .main-content {
     flex: 1;
     padding: 40px;
@@ -126,52 +120,45 @@ body {
 
 .main-content h1 {
     margin-bottom: 15px;
-    color: #1e293b;
+    color: #292b27;
 }
 
 .main-content p {
-    color: #64748b;
+    color: #77736b;
     line-height: 1.6;
 }
 
-/* Hide mobile menu button on desktop */
 .mobile-menu-btn {
     display: none;
 }
 
 
-/* Collapsed sidebar */
 .sidebar.collapsed {
     width: 75px;
 }
 
-/* Hide logo text */
 .sidebar.collapsed .logo-text {
     opacity: 0;
     width: 0;
     overflow: hidden;
 }
 
-/* Hide navigation text */
 .sidebar.collapsed .link-text {
     opacity: 0;
     width: 0;
     overflow: hidden;
 }
 
-/* Center navigation icons */
 .sidebar.collapsed .nav-link {
     justify-content: center;
     padding: 12px 0;
 }
 
-/* Center logo */
 .sidebar.collapsed .logo {
     justify-content: center;
     padding: 10px 0;
 }
 
-/* Rotate toggle icon */
 .sidebar.collapsed .toggle-btn span {
     display: inline-block;
     transform: rotate(180deg);
@@ -179,7 +166,6 @@ body {
 
 
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
 
     .sidebar {
@@ -193,12 +179,10 @@ body {
         transition: transform 0.3s ease;
     }
 
-    /* Show sidebar when mobile menu is opened */
     .sidebar.mobile-open {
         transform: translateX(0);
     }
 
-    /* Disable desktop collapsed width on mobile */
     .sidebar.collapsed {
         width: 250px;
     }
@@ -219,11 +203,10 @@ body {
         padding: 10px;
     }
 
-    /* Show hamburger button */
     .mobile-menu-btn {
         display: block;
         border: none;
-        background: #6366f1;
+        background: #c46b45;
         color: white;
 
         padding: 10px 15px;
@@ -238,7 +221,6 @@ body {
         padding: 20px;
     }
 
-    /* Keep toggle button inside sidebar */
     .toggle-btn {
         right: 15px;
         bottom: 25px;
